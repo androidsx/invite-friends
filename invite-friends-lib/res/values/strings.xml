@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Invite friends</string>
+    
+    <!-- To be overriden by the app -->
+    <string name="flurry_key" translatable="false">OVERRIDEME</string>
+    <string name="facebook_app_id" translatable="false">OVERRIDEME</string>
+    <string name="facebook_app_namespace" translatable="false">OVERRIDEME</string>   
+    
+    <string name="invite_friends_market_url" translatable="false">OVERRIDEME</string>
+    <string name="invite_friends_share_other_message">My awesome app: %s</string>
+    <!-- /END To be overriden by the app -->
+    
+    <string name="invite_friends_header">Tell your friends about the app, and have fun together!</string>
+    
+    <string name="invite_friends_button_whatsapp">WhatsApp</string>
+    <string name="invite_friends_button_facebook">Facebook</string>
+    <string name="invite_friends_button_other">Other</string>
+    
+    <string name="invite_friends_footer"><u>No, thanks</u></string>
+    
+    <string name="invite_friends_toast_after_share">You are sending the Google Play url</string>
+    <string name="invite_friends_facebook_dialog">Your voice, but funnier</string>
+    <string name="invite_friends_share_chooser">Share Google Play URL</string>
+</resources>

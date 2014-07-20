@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="invite_friends_header">20sp</dimen>
+    <dimen name="invite_friends_close_text">16sp</dimen>
+    <dimen name="invite_friends_buttons_margin">10dip</dimen>
+</resources>

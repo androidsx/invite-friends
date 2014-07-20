@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="${packageName}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/invite_friends_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="18dp"
+        android:gravity="center"
+        android:text="@string/invite_friends_header"
+        android:textColor="@color/invite_friends_header_text"
+        android:textSize="@dimen/invite_friends_header"
+        android:color="@color/invite_friends_header_text" />
+
+    <ImageView
+        android:id="@+id/invite_friends_image"
+        android:layout_width="250dip"
+        android:layout_height="250dip"
+        android:layout_below="@id/invite_friends_header"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/invite_friends_main_promo" />
+
+    <LinearLayout
+        android:id="@+id/invite_friends_buttons_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/invite_friends_image"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/invite_friends_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/invite_friends_buttons_margin"
+            android:background="@null"
+            android:onClick="onFacebookInvite"
+            android:src="@drawable/invite_friends_share_facebook" />
+
+        <ImageButton
+            android:id="@+id/invite_friends_whatsapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/invite_friends_buttons_margin"
+            android:background="@null"
+            android:onClick="onWhatsAppInvite"
+            android:src="@drawable/invite_friends_share_whatsapp" />
+
+        <ImageButton
+            android:id="@+id/invite_friends_other"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/invite_friends_buttons_margin"
+            android:background="@null"
+            android:onClick="onOtherInvite"
+            android:src="@drawable/invite_friends_share_other" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/invite_friends_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/invite_friends_buttons_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:linksClickable="false"
+        android:onClick="onWhatsAppInvite"
+        android:text="@string/invite_friends_footer"
+        android:textColor="@color/invite_friends_close_text"
+        android:textSize="@dimen/invite_friends_close_text" />
+
+</RelativeLayout>

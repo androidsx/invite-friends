@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="invite_friends_share_other_message">Ihre Stimme, aber lustiger für Android: %s</string>
+    
+    <string name="invite_friends_header">Sie Ihre Freunde über die App, und gemeinsam Spaß haben!</string>
+    <string name="invite_friends_button_whatsapp">WhatsApp</string>
+    <string name="invite_friends_button_facebook">Facebook</string>
+    <string name="invite_friends_footer"><u> Nein, danke</u></string>
+    <string name="invite_friends_button_twitter">Twitter</string>
+    <string name="invite_friends_button_other">Andere</string>
+    <string name="invite_friends_toast_after_share">Sie senden die Google Play url</string>
+    <string name="invite_friends_facebook_dialog">Ihre Stimme, aber lustiger für Android:</string>
+    <string name="invite_friends_share_chooser">Teilen Google Play URL</string>
+</resources>
