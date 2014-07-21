@@ -16,18 +16,33 @@ Usage
 
 - Create a new Facebook application, and link to your Android application
 - Import the projects to your workspace, and import `invite-friend-lib` as a library project
+- Add this to your manifest:
+```
+        <activity
+            android:name="com.androidsx.core.invitefriends.InviteFriendsActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/MyAppCompatDialogTheme" >
+        </activity>
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+```
 - Override these resources in your strings.xml:
 ```
-<string name="flurry_key"></string>
-<string name="facebook_app_id"></string>
-<string name="facebook_app_namespace"></string>   
-<string name="invite_friends_market_url"></string>
-<string name="invite_friends_share_message"></string>
+        <string name="flurry_key"></string>
+        <string name="facebook_app_id"></string>
+        <string name="facebook_app_namespace"></string>   
+        <string name="invite_friends_market_url"></string>
+        <string name="invite_friends_share_message"></string>
 ```
 - Start the activity:
 ```
-final Intent intent = new Intent(context, InviteFriendsActivity.class);
-startActivity(intent);      
+          final Intent intent = new Intent(context, InviteFriendsActivity.class);
+          startActivity(intent);      
 ```
 
 Screenshots
